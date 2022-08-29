@@ -374,14 +374,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
-  outline: 1px solid tomato;
+  justify-content: center;
 }
 
 .work-item {
-  width: 370px;
-  flex-basis: calc ((100% - var(--work-indent) * (var(--work-items)-1)) / 
-  var(--work-items));
+  flex-basis: calc ((100% - var(--work-indent) * (var(--work-items)-1)) / var(--work-items));
   border-left: 1px solid var(--border-portfolio);
   border-bottom: 1px solid var(--border-portfolio);
   border-right: 1px solid var(--border-portfolio);

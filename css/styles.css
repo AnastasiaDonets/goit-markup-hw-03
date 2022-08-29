@@ -33,19 +33,27 @@
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 h1,
 h2,
 h3,
 h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* --------------
       Студія
@@ -87,7 +95,6 @@ img {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  margin-left: 15px;
   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -121,7 +128,6 @@ img {
 .contact-list {
   display: flex;
   margin-left: auto;
-  margin-right: 15px;
 }
 
 .contact-list .list-item:not(:last-child) {
@@ -150,12 +156,9 @@ img {
   padding-top: 200px;
 }
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 
   width: 696px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -166,10 +169,7 @@ img {
 .button {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 10px 32px;
 
   min-width: 216px;
   display: block;
@@ -206,8 +206,6 @@ img {
 
 .features-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
   gap: 30px;
 }
 
@@ -240,16 +238,13 @@ img {
 
 .about-list {
   display: flex;
-  margin-bottom: 94px;
   gap: 30px;
 }
-
 /* Team */
 
 .team {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 .team-section {
   background-color: var(--third-background-color);
@@ -259,14 +254,18 @@ img {
 }
 
 .title-team {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.team-list {
+  background-color: var(--secondary-accent-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .title {
@@ -281,11 +280,9 @@ img {
   color: var(--secondary-text-color);
 }
 
-.img-team {
-  padding-bottom: 30px;
-}
 
 .team .list-item {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -296,10 +293,11 @@ img {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   display: block;
-  padding-top: 60px;
   padding-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -307,10 +305,6 @@ img {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--secondary-accent-color);
-}
-
-.address-list {
-  padding-bottom: 60px;
 }
 
 .address-item {
@@ -343,11 +337,6 @@ img {
    -------------- */
 
 /* Filter button */
-.filter-section {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-
 .filter-list {
   display: flex;
   margin-bottom: 50px;
@@ -385,11 +374,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  outline: 1px solid tomato;
 }
 
 .work-item {
   width: 370px;
-  flex-basis: calc ((100% - var(--work-indent) * (var(--work-items)-1)) / var(--work-items));
+  flex-basis: calc ((100% - var(--work-indent) * (var(--work-items)-1)) / 
+  var(--work-items));
   border-left: 1px solid var(--border-portfolio);
   border-bottom: 1px solid var(--border-portfolio);
   border-right: 1px solid var(--border-portfolio);
@@ -411,8 +403,6 @@ img {
 }
 
 .desc-img {
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 20px 24px;
 }
+
